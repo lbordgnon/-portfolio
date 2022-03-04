@@ -76,7 +76,8 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #131219;
+  background-color: #030303;
+ 
 }
 
 ::-webkit-scrollbar-thumb {
@@ -328,8 +329,12 @@ header .larguraMaxContainer nav .nav-list li a:hover {
 }
 
 main #apresentacaoPortfolio {
-  background-color: #131219;
+  background-color: #030303;
   position: relative;
+  position: relative;
+  height: 100vh;
+  background: url(../image/introduction.jpg) center center no-repeat fixed;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1024px) {
@@ -486,7 +491,7 @@ main #apresentacaoPortfolio .mouse {
 }
 
 main #sobre {
-  background-color: #17161d;
+  background-color: #030303;
 }
 
 main #sobre .larguraMaxContainer {
@@ -557,7 +562,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura1 {
   position: absolute;
   top: 40px;
   right: 430px;
-  background-color: #131219;
+  background-color: #030303;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -567,7 +572,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura2 {
   position: absolute;
   top: 100px;
   right: 150px;
-  background-color: #131219;
+  background-color: #030303;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -577,7 +582,7 @@ main #sobre .larguraMaxContainer #sobreFoto #figura3 {
   position: absolute;
   top: 250px;
   right: 450px;
-  background-color: #131219;
+  background-color: #030303;
   border-radius: 10px;
   width: 75px;
   height: 75px;
@@ -722,7 +727,7 @@ main #sobre .larguraMaxContainer #sobreTexto div a:hover {
 main #projetos {
   padding: 100px 50px;
   text-align: center;
-  background-color: #131219;
+  background-color: #030303;
 }
 
 @media screen and (max-width: 1024px) {
@@ -888,7 +893,7 @@ main #projetos .larguraMaxContainer article > div .linguagensProjeto {
 
 main #projetos .larguraMaxContainer article > div .linguagensProjeto span {
   padding: 5px;
-  background-color: #131219;
+  background-color: #030303;
   border-radius: 5px;
   color: #fefbfb;
   margin-bottom: 5px;
@@ -928,7 +933,7 @@ main #projetos .larguraMaxContainer a:hover::after {
 main #servicos {
   padding: 100px 50px;
   text-align: center;
-  background-color: #17161d;
+  background-color: #030303;
 }
 
 @media screen and (max-width: 1024px) {
@@ -962,7 +967,7 @@ main #servicos .larguraMaxContainer article {
 main #servicos .larguraMaxContainer article div {
   text-align: center;
   height: auto;
-  background-color: #131219;
+  background-color: #030303;
   padding: 40px 30px;
   border-radius: 5px;
   margin: 10px;
@@ -1020,7 +1025,7 @@ main #servicos .larguraMaxContainer article div p {
 
 main #conhecimentos {
   padding: 100px 50px;
-  background-color: #131219;
+  background-color: #030303;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1182,7 +1187,7 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
 footer {
   padding: 50px 10px;
   text-align: center;
-  background-color: #131219;
+  background-color: #030303;
   color: #fefbfb;
 }
 
