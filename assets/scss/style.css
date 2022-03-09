@@ -637,7 +637,7 @@ main #sobre .larguraMaxContainer #sobreFoto img {
 }
 
 main #sobre .larguraMaxContainer #sobreTexto {
-  width: 50%;
+ text-align: center;
 }
 
 @media screen and (max-width: 1100px) {
@@ -768,11 +768,10 @@ main #projetos .larguraMaxContainer article > div {
           flex-grow: 1;
   -ms-flex-preferred-size: calc(33% - 20px);
       flex-basis: calc(33% - 20px);
-  background-color: #17161d;
   padding: 30px 25px;
   margin: 10px;
   border-radius: 5px;
-  border: 2px solid #17161d;
+  text-align: center;
 }
 
 main #projetos .larguraMaxContainer article > div:hover {
@@ -1047,7 +1046,7 @@ main #conhecimentos .larguraMaxContainer > div {
 }
 
 main #conhecimentos .larguraMaxContainer > div article {
-  width: 50%;
+  width: 100%;
 }
 
 @media screen and (max-width: 1124px) {
@@ -1076,18 +1075,16 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover .c
   text-align: center;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover {
-  border-bottom: 4px solid #6610f2;
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div:hover{
   cursor: pointer;
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div{
   width: 20%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   height: 130px;
-  background-color: #17161d;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1108,32 +1105,7 @@ main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div {
   }
 }
 
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-nomes {
-  position: absolute;
-  top: -50px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
-  background-color: #17161d;
-  padding: 5px;
-  height: 30px;
-  width: 125px;
-  border-radius: 4px;
-  color: #fefbfb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: none;
-  font-size: 1.8rem;
-}
-
-main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-nomes-baixo {
+main #conhecimentos .larguraMaxContainer > div #cards-conhecimentos div .cards-nomes-baixo{
   position: absolute;
   bottom: -50px;
   left: 50%;
@@ -1175,13 +1147,14 @@ main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos h2 {
   color: #fefbfb;
   font-size: 3.2rem;
   font-weight: 500;
+  text-align: center;
 }
 
 main #conhecimentos .larguraMaxContainer > div #texto-conhecimentos p {
   font-size: 1.8rem;
-  max-width: 500px;
   line-height: 32px;
   color: #c9c9c9;
+  text-align: center;
 }
 
 footer {
@@ -1252,4 +1225,69 @@ footer div a {
 footer div a:hover {
   opacity: 1;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  justify-self: center;
+ 
+}
+
+.grid-container > div h2 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.grid-container > div span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.grid-container > div img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+  width: 50px;
+}
+
+
+.grid-container > div img:hover {
+ cursor: pointer;
+}
+
+
+@keyframes float {
+  0%,100%{
+		box-shadow:0 5px 15px 0 rgba(0,0,0,.6);
+		transform:translatey(0)
+	}
+	50%{
+		box-shadow:0 25px 15px 0 rgba(0,0,0,.2);
+		transform:translatey(-20px)
+	}
+}
+
+
+.grid-item-6 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.grid-item-8{
+  margin-top: 50px
+}
+
+
 /*# sourceMappingURL=style.css.map */
